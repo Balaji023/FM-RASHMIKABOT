@@ -75,7 +75,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://static.alphacoders.com/desktops/21077.jpg"
+SAITAMA_IMG = "https://initiate.alphacoders.com/queue_files/1445335.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 RASHMIKA is hosted on one of Heroku's Servers and doesn't require any donations as of now but \
