@@ -203,7 +203,7 @@ def start(update: Update, context: CallbackContext):
                                 context.bot.username)),
                          InlineKeyboardButton(
                              text=" 🔔 Channel ",
-                             url="https://t.me/focusgrpchannel")
+                             url="https://t.me/joinchat/RJx5hrtzGesdGq7b")
                      ],
                      [
                         InlineKeyboardButton(
@@ -211,13 +211,13 @@ def start(update: Update, context: CallbackContext):
                             url="https://t.me/Shhshshsv_bot?start=help"),
                          InlineKeyboardButton(
                             text=" ⚡️ Group ",
-                             url="https://t.me/focusmoviess")        
+                             url="https://t.me/joinchat/T4oAksI-QBgav2_y")        
                        
                      ],
                      [
                         InlineKeyboardButton(
                              text=" ❤️ Source Code ",
-                             url="https://github.com/ALENTL/FM-RASHMIKABOT")
+                             url="https://github.com/Balaji023/FM-RASHMIKABOT")
                     
                     ]]))
     else:
