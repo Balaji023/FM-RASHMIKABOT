@@ -52,7 +52,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I am the group management bot of FOCUS MOVIES .. You guys can't use me or add me to groups.........
+I am the group management bot of VIP MOVIES  .. You guys can't use me or add me to groups.........
 """
 
 HELP_STRINGS = """
