@@ -1,23 +1,50 @@
+
 import importlib
 import time
 import re
 from sys import argv
 from typing import Optional
 
-from SaitamaRobot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
-                          OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK, pbot,
-                          SUPPORT_CHAT, dispatcher, StartTime, telethn, updater)
+from SaitamaRobot import (
+    ALLOW_EXCL,
+    CERT_PATH,
+    DONATION_LINK,
+    LOGGER,
+    OWNER_ID,
+    PORT,
+    SUPPORT_CHAT,
+    TOKEN,
+    URL,
+    WEBHOOK,
+    SUPPORT_CHAT,
+    dispatcher,
+    StartTime,
+    telethn,
+    pbot,
+    updater,
+)
+
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from SaitamaRobot.modules import ALL_MODULES
 from SaitamaRobot.modules.helper_funcs.chat_status import is_user_admin
 from SaitamaRobot.modules.helper_funcs.misc import paginate_modules
-from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
-                      Update)
-from telegram.error import (BadRequest, ChatMigrated, NetworkError,
-                            TelegramError, TimedOut, Unauthorized)
-from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler,
-                          Filters, MessageHandler)
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
+from telegram.error import (
+    BadRequest,
+    ChatMigrated,
+    NetworkError,
+    TelegramError,
+    TimedOut,
+    Unauthorized,
+)
+from telegram.ext import (
+    CallbackContext,
+    CallbackQueryHandler,
+    CommandHandler,
+    Filters,
+    MessageHandler,
+)
 from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
 
@@ -30,10 +57,7 @@ def get_readable_time(seconds: int) -> str:
 
     while count < 4:
         count += 1
-        if count < 3:
-            remainder, result = divmod(seconds, 60)
-        else:
-            remainder, result = divmod(seconds, 24)
+        remainder, result = divmod(seconds, 60) if count < 3 else divmod(seconds, 24)
         if seconds == 0 and remainder == 0:
             break
         time_list.append(int(result))
@@ -57,8 +81,7 @@ I am the group management bot of VIP MOVIES  .. You guys can't use me or add me 
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm Dr Stone & I help admins to manage their groups! Have a look at the following for an idea of some of \
-the things I can help you with.
+I am exlusively made for FOCUS MOVIES Group and You cannot add me to your groups....You can use me either by / or ! command
 
 *Main* commands available:
  • /help: PM's you this message.
