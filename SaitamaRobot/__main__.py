@@ -75,7 +75,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://initiate.alphacoders.com/queue_files/1445335.jpg"
+SAITAMA_IMG = "https://pics.alphacoders.com/pictures/view/423772"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 RASHMIKA is hosted on one of Heroku's Servers and doesn't require any donations as of now but \
@@ -208,7 +208,7 @@ def start(update: Update, context: CallbackContext):
                      [
                         InlineKeyboardButton(
                             text=" ✨ Help ",
-                            url="https://t.me/Shhshshsv_bot?start=help"),
+                            url="https://t.me/Vip_Movies_Group_Bot?start=help"),
                          InlineKeyboardButton(
                             text=" ⚡️ Group ",
                              url="https://t.me/joinchat/T4oAksI-QBgav2_y")        
