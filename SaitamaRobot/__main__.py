@@ -203,7 +203,7 @@ def start(update: Update, context: CallbackContext):
                                 context.bot.username)),
                          InlineKeyboardButton(
                              text=" 🔔 Channel ",
-                             url="https://t.me/joinchat/RJx5hrtzGesdGq7b")
+                             url="https://t.me/joinchat/9ukizktYR01hZDg9"
                      ],
                      [
                         InlineKeyboardButton(
